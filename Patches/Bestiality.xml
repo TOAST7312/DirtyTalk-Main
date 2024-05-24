@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+<Operation Class="PatchOperationSequence">
+<operations>
+<!-- ===AnalBreeding=== -->
+
+	<!-- ===Giver=== -->
+	<li Class="PatchOperationAdd">
+		<xpath>/Defs/InteractionDef[defName="Bestiality_Anal"]/logRulesInitiator/rulesStrings</xpath>
+		<value>
+					<!-- ===Neutral Zoophile=== -->
+					<li>zoophile_n->Come here, [animal_noun].</li>
+					<li>zoophile_n->Here, [animal_noun], show me that [ass].</li>
+					<li>zoophile_n->Here, [animal_noun], I wanna [fuck] that [ass]!</li>
+					<!-- ===Neutral=== -->
+					<li>human_breed_n->I really shouldn't do this, [animal_noun]!</li>
+					<li>human_breed_n->This is so wrong, [animal_noun], but I need your [ass]!</li>
+					<li>human_breed_n->Your [ass] shouldn't feel this good, [animal_noun]!</li>
+					<li>human_breed_n->Oh, [animal_noun], I shouldn't do this!</li>
+					<li>human_breed_n->...this is so wrong...</li>
+					<!-- ===Male humanlike on animal=== -->					
+						
+					<!-- ===Female humanlike on animal=== -->
+				
+					<!-- ===Animal on humanlike=== -->	
+					<li>animal_breed_with_reply(tag=Anal_Breed_Reply)->[animal_breed]</li>
+					
+					<!-- ===Animal on any=== -->	
+					<li>animal_breed_n->*anally mounts [RECIPIENT_nameDef]*</li>			
+					<li>animal_breed_n->*[forces] [animal_penis_initiator] into [RECIPIENT_nameDef]'s [ass]*</li>	
+		</value>
+	</li>	
+	
+	<!-- ===Reciever=== -->
+	<li Class="PatchOperationAdd">
+		<xpath>/Defs/InteractionDef[defName="Bestiality_Reverse_Anal"]/logRulesInitiator/rulesStrings</xpath>
+		<value>
+					<!-- ===Neutral Zoophile=== -->
+					<li>zoophile_n->Come here, [animal_noun].</li>
+					<li>zoophile_n->Here, [animal_noun], [fuck] my [ass] with that [animal_penis_recipient]!</li>
+					<li>zoophile_n->Here, [animal_noun], come [fuck] my [ass]!</li>
+					<!-- ===Neutral=== -->
+					<li>human_breed_n->I really shouldn't do this, [animal_noun]!</li>
+					<li>human_breed_n->This is so wrong, [animal_noun], but I need your [animal_penis_recipient]!</li>
+					<li>human_breed_n->Your [animal_penis_recipient] shouldn't feel this good, [animal_noun]!</li>
+					<li>human_breed_n->Oh, [animal_noun], I shouldn't do this!</li>
+					<li>human_breed_n->...this is so wrong...</li>
+					<!-- ===Male humanlike on animal=== -->					
+
+					<!-- ===Female humanlike on animal=== -->
+					
+					<!-- ===Animal on humanlike=== -->	
+					<li>animal_breed_with_reply(tag=Anal_Breed_Reply_Reverse)->[animal_breed]</li>
+					
+					<!-- ===Animal on any=== -->	
+					<li>animal_breed_n->*presents [ass] to [RECIPIENT_nameDef]*</li>		
+
+		</value>
+	</li>	
+	
+<!-- ===VaginalBreeding=== -->
+
+	<!-- ===Giver=== -->
+	<li Class="PatchOperationAdd">
+		<xpath>/Defs/InteractionDef[defName="Bestiality_Vaginal"]/logRulesInitiator/rulesStrings</xpath>
+		<value>
+					<!-- ===Neutral Zoophile=== -->
+					<li>zoophile_n->Come here, [animal_noun].</li>
+					<li>zoophile_n->Here, [animal_noun], show me that [animal_vagina_recipient].</li>
+					<li>zoophile_n->Here, [animal_noun], I wanna [fuck] that [vagina]!</li>
+					<!-- ===Neutral=== -->
+					<li>human_breed_n->I really shouldn't do this, [animal_noun]!</li>
+					<li>human_breed_n->This is so wrong, but I can't resist this [vagina]!</li>
+					<li>human_breed_n->Your [animal_vagina_recipient] shouldn't feel this good, [animal_noun]!</li>
+					<li>human_breed_n->Your [animal_vagina_recipient] shouldn't feel this good, [animal_noun]!</li>
+					<li>human_breed_n->Oh, [animal_noun], I shouldn't do this!</li>
+					<li>human_breed_n->...this is so wrong...</li>
+					
+					<!-- ===Male humanlike on animal=== -->										
+					
+					<!-- ===Female humanlike on animal=== -->	
+					
+					<!-- ===Animal on humanlike=== -->	
+					<li>animal_breed_with_reply(tag=Vaginal_Breed_Reply)->[animal_breed]</li>
+					
+					<!-- ===Animal on any=== -->	
+					<li>animal_breed_n->*vaginally mounts [RECIPIENT_nameDef]*</li>			
+					<li>animal_breed_n->*[forces] [animal_penis_initiator] into [RECIPIENT_nameDef]'s [vagina]*</li>					
+		</value>
+	</li>	
+	
+	<!-- ===Reciever=== -->
+	<li Class="PatchOperationAdd">
+		<xpath>/Defs/InteractionDef[defName="Bestiality_Reverse_Vaginal"]/logRulesInitiator/rulesStrings</xpath>
+		<value>
+					<!-- ===Neutral Zoophile=== -->
+					<li>zoophile_n->Come here, [animal_noun].</li>
+					<li>zoophile_n->Here, [animal_noun], [fuck] my [vagina] with that [animal_penis_recipient]!</li>
+					<li>zoophile_n->Here, [animal_noun], show me that big [animal_penis_recipient]!</li>
+					<li>zoophile_n->Here, [animal_noun], come [fuck] my [vagina]!</li>
+					<!-- ===Neutral=== -->
+					<li>human_breed_n->I really shouldn't do this, [animal_noun]!</li>
+					<li>human_breed_n->This is so wrong, [animal_noun], but I can't resist your [animal_penis_recipient]!</li>
+					<li>human_breed_n->Your [animal_penis_recipient] shouldn't feel this good, [animal_noun]!</li>
+					<li>human_breed_n->Oh, [animal_noun], I shouldn't do this!</li>
+					<li>human_breed_n->...this is so wrong...</li>		
+					<!-- ===Male humanlike on animal=== -->										
+
+					<!-- ===Female humanlike on animal=== -->	
+					
+					<!-- ===Animal on humanlike=== -->	
+					<li>animal_breed_with_reply(tag=Vaginal_Breed_Reply_Reverse)->[animal_breed]</li>
+					
+					<!-- ===Animal on any=== -->
+					<li>animal_breed_n->*presents [animal_vagina_initiator] to [RECIPIENT_nameDef]*</li>							
+
+		</value>
+	</li>	
+
+<!-- ===OralBreeding=== -->
+
+	<!-- ===Reciever=== -->
+	<li Class="PatchOperationAdd">
+		<xpath>/Defs/InteractionDef[defName="Bestiality_Oral"]/logRulesInitiator/rulesStrings</xpath>
+		<value>
+					<!-- ===Neutral Zoophile=== -->
+					<li>zoophile_n->Come here, and [suck] this [penis], [animal_noun]!</li>
+					<li>zoophile_n->Here, [animal_noun], [suck] my [penis].</li>
+					<li>zoophile_n->Your mouth feels so good, [animal_noun]!</li>
+					<!-- ===Neutral=== -->
+					<li>human_breed_n->I really shouldn't do this, [animal_noun]!</li>
+					<li>human_breed_n->This is so wrong, [animal_noun], but your tongue feels so good!</li>
+					<li>human_breed_n->I'm so horny I can't stop myself, [animal_noun]!</li>
+					<li>human_breed_n->Your mouth shouldn't feel this good, [animal_noun]!</li>
+					<li>human_breed_n->Oh, [animal_noun], I shouldn't do this!</li>
+					<li>human_breed_n->...this is so wrong...</li>
+					<!-- ===Male humanlike on animal=== -->							
+					
+					<!-- ===Female humanlike on animal=== -->	
+					
+					<!-- ===Animal on humanlike=== -->	
+					<li>animal_breed_with_reply(tag=Orally_Breed_Reply)->[animal_breed]</li>
+					
+					<!-- ===Animal on any=== -->							
+					<li>animal_breed_n->*[forces] [animal_penis_initiator] into [RECIPIENT_nameDef]'s mouth*</li>
+					<li>animal_breed_n->*forces [RECIPIENT_nameDef] to suck on [animal_penis_initiator]*</li>							
+					<li>animal_breed_n->*facefucks [RECIPIENT_nameDef]*</li>
+		</value>
+	</li>	
+	
+	<!-- ===Giver=== -->
+	<li Class="PatchOperationAdd">
+		<xpath>/Defs/InteractionDef[defName="Bestiality_Reverse_Oral"]/logRulesInitiator/rulesStrings</xpath>
+		<value>
+					<!-- ===Neutral Zoophile=== -->
+					<li>zoophile_n->Come here, [animal_noun].</li>
+					<li>zoophile_n->Here, [animal_noun], let me taste that [animal_penis_recipient].</li>
+					<li>zoophile_n->Here, [animal_noun], show me that tasty [animal_penis_recipient]!</li>
+					<li>zoophile_n->Mmm, your [animal_penis_recipient] tastes so good, [animal_noun]!</li>
+					<!-- ===Neutral=== -->
+					<li>human_breed_n->I really shouldn't do this, [animal_noun]!</li>
+					<li>human_breed_n->This is so wrong, [animal_noun], but I can't resist your [animal_penis_recipient]!</li>
+					<li>human_breed_n->I can't help but want to taste your [animal_penis_recipient], [animal_noun]!</li>
+					<li>human_breed_n->Your [animal_penis_recipient] shouldn't taste this good, [animal_noun]!</li>
+					<li>human_breed_n->Oh, [animal_noun], I shouldn't do this!</li>
+					<li>human_breed_n->...this is so wrong...</li>	
+					<!-- ===Male humanlike on animal=== -->							
+					
+					<!-- ===Female humanlike on animal=== -->	
+					
+					<!-- ===Animal on humanlike=== -->	
+					<li>animal_breed_with_reply(tag=Orally_Breed_Reply_Reverse)->[animal_breed]</li>
+					
+					<!-- ===Animal on any=== -->
+					<li>animal_breed_n->*Opens mouth wide for [RECIPIENT_nameDef]'s [animal_penis_recipient]*</li>
+					<li>animal_breed_n->*Offers mouth to [RECIPIENT_nameDef]*</li>
+					<li>animal_breed_n->*Eagerly takes [RECIPIENT_nameDef]'s [animal_penis_recipient] into their mouth*</li>
+		</value>
+	</li>	
+	
+	
+	<!-- ===Servicer=== -->
+	<li Class="PatchOperationAdd">
+		<xpath>/Defs/InteractionDef[defName = "Bestiality_Reverse_Oral_Service"]/logRulesInitiator/rulesStrings</xpath>
+		<value>
+					<!-- ===Neutral Zoophile=== -->
+					<li>zoophile_n->Come here, [animal_noun].</li>
+					<li>zoophile_n->Here, [animal_noun], let me taste that [animal_genitals_recipient].</li>
+					<li>zoophile_n->Here, [animal_noun], show me that tasty [animal_genitals_recipient]!</li>
+					<li>zoophile_n->Mmm, your [animal_genitals_recipient] tastes so good, [animal_noun]!</li>
+					<!-- ===Neutral=== -->
+					<li>human_breed_n->I really shouldn't do this, [animal_noun]!</li>
+					<li>human_breed_n->This is so wrong, but I can't resist this [animal_genitals_recipient]!</li>
+					<li>human_breed_n->I can't help but want to taste your [animal_genitals_recipient], [animal_noun]!</li>
+					<li>human_breed_n->Your [animal_genitals_recipient] shouldn't taste this good, [animal_noun]!</li>
+					<li>human_breed_n->Oh, [animal_noun], I shouldn't do this!</li>
+					<li>human_breed_n->...this is so wrong...</li>
+					<!-- ===Male humanlike on animal=== -->										
+						
+					<!-- ===Female humanlike on animal=== -->	
+					
+					<!-- ===Animal on humanlike=== -->	
+					<li>animal_breed_with_reply(tag=Orally_Service_Reply)->[animal_breed]</li>
+					
+					<!-- ===Animal on any=== -->				
+						<li>animal_breed_n->*[licks] [RECIPIENT_nameDef]'s [animal_genitals_recipient]*</li>										
+
+		</value>
+	</li>	
+	
+	
+	
+	<!-- ===Handjob=== -->
+	<li Class="PatchOperationAdd">
+		<xpath>/Defs/InteractionDef[defName = "Bestiality_Reverse_Handjob"]/logRulesInitiator/rulesStrings</xpath>
+		<value>
+					<!-- ===Neutral Zoophile=== -->
+					<li>zoophile_n->Come here and show me your [animal_penis_recipient], [animal_noun]!</li>
+					<li>zoophile_n->Here, [animal_noun], you want me to rub your [animal_penis_recipient]?</li>
+					<li>zoophile_n->Your [animal_penis_recipient] feels so nice, [animal_noun]!</li>
+					<li>zoophile_n->Come here, [animal_noun].</li>
+					<li>zoophile_n->Here, [animal_noun], let me feel that [animal_penis_recipient].</li>
+					<li>zoophile_n->Here, [animal_noun], show me that nice [animal_penis_recipient]!</li>
+					<li>zoophile_n->Mmm, your [animal_penis_recipient] feels so nice, [animal_noun]!</li>
+					<!-- ===Neutral=== -->
+					<li>human_breed_n->I really shouldn't do this, [animal_noun]!</li>
+					<li>human_breed_n->This is so wrong, [animal_noun], but your [animal_penis_recipient] feels so nice!</li>
+					<li>human_breed_n->I'm so horny I can't stop myself, [animal_noun]!</li>
+					<li>human_breed_n->Your [animal_penis_recipient] shouldn't feel this good, [animal_noun]!</li>
+					<li>human_breed_n->Oh, [animal_noun], I shouldn't do this!</li>
+					<li>human_breed_n->...this is so wrong...</li>
+					<li>human_breed_n->I really shouldn't do this, [animal_noun]!</li>
+					<li>human_breed_n->This is so wrong, [animal_noun], but I can't resist your [animal_penis_recipient]!</li>
+					<li>human_breed_n->I can't help but want to stroke your [animal_penis_recipient], [animal_noun]!</li>
+					<li>human_breed_n->Your [animal_penis_recipient] shouldn't feel this nice, [animal_noun]!</li>	
+					<!-- ===Male humanlike on animal=== -->	
+					
+					<!-- ===Female humanlike on animal=== -->	
+					
+					<!-- ===Animal on humanlike=== -->	
+					<li>animal_breed_with_reply(tag=Handjob_Service_Reply)->[animal_breed]</li>
+					
+					<!-- ===Animal on any=== -->
+					<li>animal_breed_n->*strokes [RECIPIENT_nameDef]'s [animal_penis_recipient]*</li>	
+
+		</value>
+	</li>	
+	
+<!-- ===DoublePenetration=== -->
+
+	<!-- ===Giver=== -->
+	<li Class="PatchOperationAdd">
+		<xpath>/Defs/InteractionDef[defName="Bestiality_Double_Penetration_M"]/logRulesInitiator/rulesStrings</xpath>
+		<value>
+					<!-- ===Neutral Zoophile=== -->
+					<li>zoophile_n->Come here, [animal_noun].</li>
+					<li>zoophile_n->Want these [penis]s, [animal_noun]?</li>
+					<li>zoophile_n->Here, [animal_noun], I wanna [fuck] you with these [penis]s!</li>
+					<!-- ===Neutral=== -->
+					<li>human_breed_n->I really shouldn't do this, [animal_noun]!</li>
+					<li>human_breed_n->This is so wrong, [animal_noun]! [exclaim_low]!</li>
+					<li>human_breed_n->My [penis]s shouldn't feel this good, [animal_noun]!</li>
+					<li>human_breed_n->Oh, [animal_noun], I shouldn't do this!</li>
+					<li>human_breed_n->...this is so wrong...</li>
+					<!-- ===Male humanlike on animal=== -->					
+						
+					<!-- ===Female humanlike on animal=== -->
+				
+					<!-- ===Animal on humanlike=== -->	
+					<li>animal_breed_with_reply(tag=DP_Breed_Reply)->[animal_breed]</li>
+					
+					<!-- ===Animal on any=== -->	
+					<li>animal_breed_n->*anally mounts [RECIPIENT_nameDef]*</li>			
+					<li>animal_breed_n->*[forces] [penis]s into [RECIPIENT_nameDef]'s [ass]*</li>	
+		</value>
+	</li>	
+	
+	<!-- ===Reciever=== -->
+	<li Class="PatchOperationAdd">
+		<xpath>/Defs/InteractionDef[defName="Bestiality_Reverse_Double_Penetration_M"]/logRulesInitiator/rulesStrings</xpath>
+		<value>
+					<!-- ===Neutral Zoophile=== -->
+					<li>zoophile_n->Come here, [animal_noun].</li>
+					<li>zoophile_n->Here, [animal_noun], [fuck] me with those [penis]s!</li>
+					<li>zoophile_n->Wanna [fuck] me with those [penis]s, [animal_noun]?</li>
+					<!-- ===Neutral=== -->
+					<li>human_breed_n->I really shouldn't do this, [animal_noun]!</li>
+					<li>human_breed_n->This is so wrong, [animal_noun], but I need your [penis]s!</li>
+					<li>human_breed_n->Your [penis]s shouldn't feel this good, [animal_noun]!</li>
+					<li>human_breed_n->Oh, [animal_noun], I shouldn't do this! [exclaim_low]!</li>
+					<li>human_breed_n->...this is so wrong...</li>
+					<!-- ===Male humanlike on animal=== -->					
+
+					<!-- ===Female humanlike on animal=== -->
+					
+					<!-- ===Animal on humanlike=== -->	
+					<li>animal_breed_with_reply(tag=DP_Breed_Reply_Reverse)->[animal_breed]</li>
+					
+					<!-- ===Animal on any=== -->	
+					<li>animal_breed_n->*presses [ass] against [RECIPIENT_nameDef]'s [penis]s*</li>		
+					<li>animal_breed_n->*presents for [RECIPIENT_nameDef]'s [penis]s*</li>	
+					
+		</value>
+	</li>	
+	
+		
+	<!-- ===RulePacks - these just remove the "x was bred by y" lines they don't need any further patching=== -->
+	<li Class="PatchOperationReplace">
+		<xpath>/Defs/RulePackDef[defName = "Bestiality_AnalRP"]/rulePack/rulesStrings</xpath>
+		<value>
+			<rulesStrings>	
+				<li>sent-></li>
+			</rulesStrings>
+		</value>
+	</li>		
+	<li Class="PatchOperationReplace">
+		<xpath>/Defs/RulePackDef[defName = "Bestiality_Reverse_AnalRP"]/rulePack/rulesStrings</xpath>
+		<value>
+			<rulesStrings>	
+				<li>sent-></li>
+			</rulesStrings>
+		</value>
+	</li>	
+		<li Class="PatchOperationReplace">
+		<xpath>/Defs/RulePackDef[defName = "Bestiality_VaginalRP"]/rulePack/rulesStrings</xpath>
+		<value>
+			<rulesStrings>	
+				<li>sent-></li>
+			</rulesStrings>
+		</value>
+	</li>	
+	<li Class="PatchOperationReplace">
+		<xpath>/Defs/RulePackDef[defName = "Bestiality_Reverse_VaginalRP"]/rulePack/rulesStrings</xpath>
+		<value>
+			<rulesStrings>	
+				<li>sent-></li>
+			</rulesStrings>
+		</value>
+	</li>	
+	<li Class="PatchOperationReplace">
+		<xpath>/Defs/RulePackDef[defName = "Bestiality_OralRP"]/rulePack/rulesStrings</xpath>
+		<value>
+			<rulesStrings>	
+				<li>sent-></li>
+			</rulesStrings>
+		</value>
+	</li>	
+	<li Class="PatchOperationReplace">
+		<xpath>/Defs/RulePackDef[defName = "Bestiality_Reverse_OralRP"]/rulePack/rulesStrings</xpath>
+		<value>
+			<rulesStrings>	
+				<li>sent-></li>
+			</rulesStrings>
+		</value>
+	</li>	
+	<li Class="PatchOperationReplace">
+		<xpath>/Defs/RulePackDef[defName = "OtherRapeRP"]/rulePack/rulesStrings</xpath>
+		<value>
+			<rulesStrings>	
+				<li>sent-></li>
+			</rulesStrings>
+		</value>
+	</li>	
+	<li Class="PatchOperationReplace">
+		<xpath>/Defs/RulePackDef[defName = "OtherSexRP"]/rulePack/rulesStrings</xpath>
+		<value>
+			<rulesStrings>	
+				<li>sent-></li>
+			</rulesStrings>
+		</value>
+	</li>	
+	<li Class="PatchOperationReplace">
+		<xpath>/Defs/RulePackDef[defName = "Bestiality_DoublePenRP"]/rulePack/rulesStrings</xpath>
+		<value>
+			<rulesStrings>	
+				<li>sent-></li>
+			</rulesStrings>
+		</value>
+	</li>	
+</operations>
+</Operation>
+</Patch>
